@@ -54,8 +54,6 @@ services:
     image: adminer
     labels:
       - "traefik.http.routers.adminer.rule=Host(`${ADMINER_DOMAIN}`)"
-    ports:
-      - "8080:8080"
     depends_on:
       - db
 
